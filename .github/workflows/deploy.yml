@@ -1,10 +1,9 @@
-
 name: GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Set a branch name to trigger deployment
+      - main
   pull_request:
   workflow_dispatch:
 
@@ -25,14 +24,15 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Build
+      - name: Install dependencies and build
         run: |
           npm ci
           npm run build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          publish_branch: gh-pages  # Optional, but good to be explicit
