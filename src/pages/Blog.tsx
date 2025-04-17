@@ -20,7 +20,7 @@ const Blog = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Last weekend, I explored some spectacular mountain biking trails connecting Ku-ring-gai Chase National Park to Garigal National Park. The technical single tracks and stunning harbor views made for an unforgettable ride.
+                Last weekend, I explored some spectacular mountain biking trails connecting Ku-ring-gai Chase National Park to Garigal National Park. The technical single tracks and stunning harbor views made for an unforgettable ride. It was quite fun.
               </p>
             </CardContent>
           </Card>
