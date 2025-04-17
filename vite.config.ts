@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: 'https://miacycle.github.io/mia-sydney-cycle/',
+  base: './',
   server: {
     host: "::",
     port: 8080,
