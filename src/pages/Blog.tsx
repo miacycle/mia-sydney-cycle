@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -52,6 +51,54 @@ const Blog = () => {
         </TabsContent>
 
         <TabsContent value="tech" className="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>Multi-cluster Management with Meshery</CardTitle>
+              <CardDescription>April 17, 2025</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Deep dive into how Meshery revolutionizes multi-cluster Kubernetes management and multi-cloud services configuration. Learn about unified control planes, seamless cluster registration, and centralized policy management across your entire cloud native infrastructure.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Introducing the Helm Kanvas Snapshot Plugin</CardTitle>
+              <CardDescription>April 16, 2025</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Explore the powerful Helm Kanvas Snapshot plugin that enables versioning and rollback capabilities for your Kubernetes configurations. See how it simplifies configuration management and provides instant visualization of your cluster state changes.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>A Guide to Interpreting Meshery Designs</CardTitle>
+              <CardDescription>April 14, 2025</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Master the art of reading and understanding Meshery Designs. From basic component relationships to complex service interactions, learn how to effectively interpret visual representations of your cloud native infrastructure.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Mastering Meshery Shapes and Edges</CardTitle>
+              <CardDescription>April 12, 2025</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                An in-depth look at Meshery's visual language through its shapes and edges. Understanding component representations, connection types, and how they combine to create meaningful architectural diagrams for your cloud native applications.
+              </p>
+            </CardContent>
+          </Card>
+
           <Card>
             <CardHeader>
               <CardTitle>Revolutionizing Cloud Native UIs with Layer5 Kanvas</CardTitle>
