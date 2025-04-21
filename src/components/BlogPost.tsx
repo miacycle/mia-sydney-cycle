@@ -48,13 +48,12 @@ const blogPosts: BlogPost[] = [
     category: "tech",
     content: "Explore the powerful [Helm Kanvas Snapshot plugin](https://meshery.io/extensions/helm-kanvas-snapshot) that enables versioning and rollback capabilities for your Kubernetes configurations. See how it simplifies configuration management and provides instant visualization of your cluster state changes."
   },
-  ,
   {
     id: "visual-kubernetes-topology",
     title: "Ending Finger-pointing in Cloud Native Infrastructure Management with Layer5 Kanvas",
     date: "April 12, 2025",
     category: "tech",
-    content: "Navigating the intricacies of cloud native infrastructure can often feel like solving a complex puzzle with multiple hands in the mix. Different teams, various tools, and constant updates can lead to confusion, miscommunication, and the dreaded "finger-pointing" when issues arise. Layer5 Kanvas is changing this narrative by fostering seamless collaboration between developers and operations teams.
+    content: `Navigating the intricacies of cloud native infrastructure can often feel like solving a complex puzzle with multiple hands in the mix. Different teams, various tools, and constant updates can lead to confusion, miscommunication, and the dreaded "finger-pointing" when issues arise. Layer5 Kanvas is changing this narrative by fostering seamless collaboration between developers and operations teams.
 
 **The Collaboration Gap in Cloud Native**
 
@@ -91,9 +90,8 @@ By fostering collaboration, Layer5 Kanvas offers numerous benefits:
 
 Layer5 Kanvas is revolutionizing how teams manage cloud native infrastructure. By facilitating collaboration, it eliminates finger-pointing, improves efficiency, and empowers developers to work together more effectively.
 
-Try dragging and dropping your Kubernetes manifest into [https://kanvas.new](https://kanvas.new) today and experience the future of collaborative infrastructure management."
-  },
-
+Try dragging and dropping your Kubernetes manifest into [https://kanvas.new](https://kanvas.new) today and experience the future of collaborative infrastructure management.`
+  }
 ];
 
 export const BlogPost = () => {
