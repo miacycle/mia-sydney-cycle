@@ -35,6 +35,20 @@ const blogPosts: BlogPost[] = [
     content: "Completed the scenic Eastern Beaches coastal ride from Bondi to La Perouse. The route offers stunning ocean views, challenging climbs, and plenty of coffee stops along the way."
   },
   {
+    id: "blue-mountains-epic",
+    title: "Blue Mountains Epic: Katoomba to Blackheath",
+    date: "March 28, 2025",
+    category: "cycling",
+    content: "Tackled the challenging climb from Katoomba to Blackheath in the Blue Mountains. Despite the foggy conditions, the views from Evans Lookout were absolutely breathtaking. The descent back was exhilarating!"
+  },
+  {
+    id: "west-head-loop",
+    title: "West Head Loop: Through Ku-ring-gai Chase",
+    date: "March 20, 2025",
+    category: "cycling",
+    content: "Completed the stunning West Head loop through Ku-ring-gai Chase National Park. The road quality is superb, traffic minimal, and the views of Pittwater and the Central Coast are simply magnificent."
+  },
+  {
     id: "multi-cluster-management",
     title: "Multi-cluster Management with Meshery",
     date: "April 17, 2025",
@@ -47,6 +61,20 @@ const blogPosts: BlogPost[] = [
     date: "April 16, 2025",
     category: "tech",
     content: "Explore the powerful Helm Kanvas Snapshot plugin that enables versioning and rollback capabilities for your Kubernetes configurations. See how it simplifies configuration management and provides instant visualization of your cluster state changes."
+  },
+  {
+    id: "service-mesh-patterns",
+    title: "Emerging Service Mesh Patterns for 2025",
+    date: "April 12, 2025",
+    category: "tech",
+    content: "An analysis of emerging service mesh adoption patterns across industries. This post covers new security models, advanced traffic management strategies, and how organizations are leveraging service meshes for multi-cluster and multi-cloud deployments."
+  },
+  {
+    id: "react-18-concurrency",
+    title: "Mastering React 18's Concurrency Features",
+    date: "April 8, 2025",
+    category: "tech",
+    content: "A deep dive into React 18's concurrency features including Suspense, transitions, and the new rendering model. Discover practical patterns for implementing these features in your applications and the performance benefits they bring."
   }
 ];
 
@@ -88,3 +116,4 @@ export const BlogPost = () => {
 };
 
 export { blogPosts };
+
