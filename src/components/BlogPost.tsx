@@ -46,8 +46,8 @@ const blogPosts: BlogPost[] = [
     title: "Introducing the Helm Kanvas Snapshot Plugin",
     date: "April 16, 2025",
     category: "tech",
-    content: "Explore the powerful Helm Kanvas Snapshot plugin that enables versioning and rollback capabilities for your Kubernetes configurations. See how it simplifies configuration management and provides instant visualization of your cluster state changes."
-  }
+    content: "Explore the powerful [Helm Kanvas Snapshot plugin](https://meshery.io/extensions/helm-kanvas-snapshot) that enables versioning and rollback capabilities for your Kubernetes configurations. See how it simplifies configuration management and provides instant visualization of your cluster state changes."
+  },
 ];
 
 export const BlogPost = () => {
