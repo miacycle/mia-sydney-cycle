@@ -1,6 +1,5 @@
 
 import { Github } from "lucide-react";
-import { Button } from "./ui/button";
 
 export const Hero = () => {
   return (
@@ -25,19 +24,6 @@ export const Hero = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Based in Sydney, Australia 🇦🇺
             </p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <Button className="gap-2" asChild>
-                <a href="https://github.com/miacycle" target="_blank" rel="noopener noreferrer">
-                  <Github className="w-5 h-5" />
-                  GitHub
-                </a>
-              </Button>
-              <Button variant="secondary" asChild>
-                <a href="http://layer5.io/community/members/mia-grenell" target="_blank" rel="noopener noreferrer">
-                  Layer5 Profile
-                </a>
-              </Button>
-            </div>
           </div>
           <div className="flex-1 flex justify-center">
             <img
