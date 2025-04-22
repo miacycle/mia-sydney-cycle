@@ -1,8 +1,8 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import ReactMarkdown from 'react-markdown';
 
 interface BlogPost {
   id: string;
@@ -107,6 +107,8 @@ export const BlogPost = () => {
     );
   }
 
+  const shareUrl = `${window.location.origin}/blog/${post.id}`;
+
   return (
     <div className="container mx-auto px-4 py-16 page-transition">
       <Button 
@@ -122,9 +124,20 @@ export const BlogPost = () => {
         <CardHeader>
           <CardTitle>{post.title}</CardTitle>
           <CardDescription>{post.date}</CardDescription>
+          <Button
+            variant="outline"
+            className="mt-2"
+            onClick={() => {
+              navigator.clipboard.writeText(shareUrl);
+            }}
+          >
+            Share Post
+          </Button>
         </CardHeader>
         <CardContent>
-          <p className="text-muted-foreground whitespace-pre-wrap">{post.content}</p>
+          <div className="prose dark:prose-invert max-w-none">
+            <ReactMarkdown>{post.content}</ReactMarkdown>
+          </div>
         </CardContent>
       </Card>
     </div>
