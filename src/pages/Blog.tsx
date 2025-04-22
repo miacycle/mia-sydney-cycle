@@ -9,7 +9,7 @@ const Blog = () => {
     <div className="container mx-auto px-4 py-16 page-transition">
       <h1 className="text-4xl font-bold mb-8">Blog</h1>
       
-      <Tabs defaultValue="cycling" className="w-full">
+      <Tabs value="cycling" className="w-full">
         <TabsList className="mb-8">
           <TabsTrigger value="cycling">Cycling Adventures</TabsTrigger>
           <TabsTrigger value="tech">Tech & Open Source</TabsTrigger>
@@ -33,7 +33,7 @@ const Blog = () => {
             ))}
         </TabsContent>
 
-        <TabsContent value="tech" className="space-y-6">
+        <TabsContent defaultValue="tech" className="space-y-6">
           {blogPosts
             .filter(post => post.category === "tech")
             .map(post => (
