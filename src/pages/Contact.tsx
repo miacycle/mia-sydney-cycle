@@ -99,18 +99,6 @@ const Contact = () => {
             Feel free to reach out through my social profiles or contact form.
           </p>
           
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Mail className="h-5 w-5 text-primary" />
-              <span>mia@example.com</span>
-            </div>
-            
-            <div className="flex items-center gap-2">
-              <MessageSquare className="h-5 w-5 text-primary" />
-              <span>Available for chat 9am-5pm AEST</span>
-            </div>
-          </div>
-          
           <div className="flex flex-wrap gap-4 mt-8">
             <Button className="gap-2" asChild>
               <a href="https://github.com/miacycle" target="_blank" rel="noopener noreferrer">
