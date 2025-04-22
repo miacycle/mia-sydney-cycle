@@ -78,7 +78,7 @@ Layer5 Kanvas addresses these challenges head-on by providing a centralized, vis
 
 **Benefits of Layer5 Kanvas**
 
-By fostering collaboration, <a href="https://kanvas.new">Layer5 Kanvas</a> offers numerous benefits:
+By fostering collaboration, [Layer5 Kanvas](https://kanvas.new) offers numerous benefits:
 
 *   **Reduced misunderstandings:** Shared visual context ensures everyone is aligned.
 *   **Faster troubleshooting:** Easy identification and shared understanding of issues.
