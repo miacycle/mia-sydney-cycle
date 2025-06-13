@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
+import remarkHtml from 'remark-html';
 
 interface BlogPost {
   id: string;
@@ -136,7 +137,21 @@ export const BlogPost = () => {
         </CardHeader>
         <CardContent>
           <div className="prose dark:prose-invert max-w-none">
-            <ReactMarkdown>{post.content}</ReactMarkdown>
+            <ReactMarkdown 
+              remarkPlugins={[remarkHtml]}
+              components={{
+                a: ({ node, ...props }) => (
+                  <a 
+                    {...props} 
+                    className="text-blue-600 hover:text-blue-800 underline" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  />
+                )
+              }}
+            >
+              {post.content}
+            </ReactMarkdown>
           </div>
         </CardContent>
       </Card>
