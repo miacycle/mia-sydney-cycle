@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
@@ -13,6 +14,7 @@ const Blog = () => {
         <TabsList className="mb-8">
           <TabsTrigger value="cycling">Cycling Adventures</TabsTrigger>
           <TabsTrigger value="tech">Tech & Open Source</TabsTrigger>
+          <TabsTrigger value="general">General</TabsTrigger>
         </TabsList>
         
         <TabsContent value="cycling" className="space-y-6">
@@ -50,9 +52,28 @@ const Blog = () => {
               </Link>
             ))}
         </TabsContent>
+
+        <TabsContent value="general" className="space-y-6">
+          {blogPosts
+            .filter(post => post.category === "general")
+            .map(post => (
+              <Link key={post.id} to={`/blog/${post.id}`}>
+                <Card className="hover:bg-muted/50 transition-colors">
+                  <CardHeader>
+                    <CardTitle>{post.title}</CardTitle>
+                    <CardDescription>{post.date}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground line-clamp-3">{post.content}</p>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+        </TabsContent>
       </Tabs>
     </div>
   );
 };
 
 export default Blog;
+
