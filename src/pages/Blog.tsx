@@ -1,5 +1,4 @@
 
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
@@ -9,6 +8,21 @@ const Blog = () => {
   return (
     <div className="container mx-auto px-4 py-16 page-transition">
       <h1 className="text-4xl font-bold mb-8">Blog</h1>
+      
+      <div className="mb-8 space-y-4">
+        <p className="text-muted-foreground">Browse all posts by category or view individual category pages:</p>
+        <div className="flex flex-wrap gap-4">
+          <Link to="/blog/cycling" className="text-primary hover:underline">
+            View all Cycling Adventures →
+          </Link>
+          <Link to="/blog/tech" className="text-primary hover:underline">
+            View all Tech & Open Source →
+          </Link>
+          <Link to="/blog/general" className="text-primary hover:underline">
+            View all General posts →
+          </Link>
+        </div>
+      </div>
       
       <Tabs defaultValue="cycling" className="w-full">
         <TabsList className="mb-8">
@@ -76,4 +90,3 @@ const Blog = () => {
 };
 
 export default Blog;
-
