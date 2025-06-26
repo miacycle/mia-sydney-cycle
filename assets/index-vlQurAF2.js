@@ -156,7 +156,9 @@ By fostering collaboration, [Layer5 Kanvas](https://kanvas.new) offers numerous 
 *   **Enhanced teamwork:** Collaborative editing and version control promote teamwork.
 *   **Better onboarding:** Visual representation simplifies understanding of complex infrastructure.
 
-**Try Layer5 Kanvas Today**
+Kanvas is a multi-modal collaboration suite built atop one of the Cloud Native Computing Foundation’s highest velocity open source projects: Meshery. Kanvas’s two modes, Designer and Operator, offer declarative and imperative DevOps workflows, respectively. Both modes provide a visual interface for creating and managing complex cloud native infrastructure, expediting collaborative problem-solving, brainstorming and innovation, engineer onboarding, and auto-documented infrastructure. Importantly, Kanvas helps teams avoid finger-pointing and the blame-game by allowing them to be on the same page - literally.
+
+
 
 Layer5 Kanvas is revolutionizing how teams manage cloud native infrastructure. By facilitating collaboration, it eliminates finger-pointing, improves efficiency, and empowers developers to work together more effectively.
 
